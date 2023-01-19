@@ -1,0 +1,29 @@
+{
+  "name": "test-vue",
+  "version": "1.0.0",
+  "description": "Test vue repository",
+  "targets": { "main": false },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beenlord/Test-vue.git"
+  },
+  "keywords": [],
+  "author": "Beenlord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Beenlord/Test-vue/issues"
+  },
+  "homepage": "https://github.com/Beenlord/Test-vue#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "@parcel/transformer-vue": "^2.8.2",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  }
+}
