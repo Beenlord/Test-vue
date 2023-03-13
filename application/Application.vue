@@ -28,20 +28,12 @@ export default {
 			handler(value) {
 				this.$nextTick(() => {
 					const targets = this.$refs.pageComponent.$el;
-					this.$anime
-							.timeline()
-							.add({
-								targets,
-								translateY: `25rem`,
-							})
-							.add({
-								targets,
-								translateY: `25rem`,
-							})
-							.add({
-								targets,
-								translateY: `25rem`,
-							});
+					this.$anime({
+						targets,
+						easing: 'easeOutCubic',
+						duration: 300,
+						translateX: ['100%', 0],
+					});
 				});
 			},
 		},
@@ -59,5 +51,6 @@ export default {
 	flex-direction: column;
 
 	font-size: 1.6rem;
+	overflow: hidden;
 }
 </style>
